@@ -1,0 +1,51 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+main{
+    display: flex;
+}
+.sidebar{
+    top:100px;
+    height: 400px;
+    position: sticky;
+    width: 200px;
+    background-color: blue;
+    padding:10px;
+}
+.overflowing{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    gap:10px;
+    width: auto;
+    background-color: red;
+    padding:10px;
+}
+.boxes{
+    flex-shrink:0;
+    background-color: bisque;
+    border:10px solid black;
+    height:500px;
+    width: auto;
+
+}
+.rightbar{
+    height:1000px;
+    width: 800px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.box{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+}
